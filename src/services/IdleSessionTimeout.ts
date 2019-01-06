@@ -12,7 +12,7 @@ const defaultResetEvents = [
   "scroll",
   "touchstart",
   "touchmove",
-  "touchend",
+  "touchend"
 ];
 
 export class IdleSessionTimeout implements IIdleSessionTimeout {
@@ -73,7 +73,7 @@ export class IdleSessionTimeout implements IIdleSessionTimeout {
   };
 
   public getTimeLeft = (): number => {
-    return Date.now() - this._restTime!;
+    return this._timeSpan - (Date.now() - this._restTime!) ;
   };
 
   private _onTimeOut = (): void => {
