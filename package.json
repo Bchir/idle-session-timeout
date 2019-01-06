@@ -2,6 +2,7 @@
   "name": "idle-session-timeout",
   "version": "1.0.0",
   "description": "Idle session timeout is a security and resource management feature that automatically logs a user out after a period of inactivity",
+  "repository": "https://github.com/Bchir/idle-session-timeout",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
@@ -15,7 +16,7 @@
     "typescript",
     "timeout"
   ],
-  "author": "Mohamed Amine BCHIR",
+  "author": "Mohamed Amine BCHIR <Bchir.Mohamed.Amine@outlook.com>",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.2.2"
