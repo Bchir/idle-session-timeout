@@ -56,7 +56,6 @@ export class IdleSessionTimeout implements IIdleSessionTimeout {
     }
     this._timerId = window.setTimeout(this._onTimeOut, this._timeSpan);
     this._restTime = Date.now();
-    console.log(`reset ${this._restTime!} - ${this._timerId}`);
   };
 
   public dispose = (): void => {
