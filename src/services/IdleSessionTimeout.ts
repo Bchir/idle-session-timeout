@@ -5,7 +5,6 @@ const defaultResetEvents = [
   "mousedown",
   "mouseup",
   "keypress",
-  "touchstart",
   "DOMMouseScroll",
   "mousewheel",
   "MSPointerMove",
