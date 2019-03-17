@@ -5,4 +5,5 @@ export interface IIdleSessionTimeout {
   dispose: () => void;
   reset: () => void;
   getTimeLeft: () => number;
+  registerIFrame: (element: HTMLIFrameElement) => void;
 }
