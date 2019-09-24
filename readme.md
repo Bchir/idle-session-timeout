@@ -45,6 +45,9 @@ session.dispose();
 // returns time left before time out
 let timeLeft = session.getTimeLeft();
 
+// change the time span for idle
+session.updateTimeSpan(15 * 60 * 1000);
+
 ```
 
 By default the counter is automatically reset on those events:

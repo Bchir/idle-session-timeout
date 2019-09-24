@@ -82,6 +82,11 @@ export class IdleSessionTimeout implements IIdleSessionTimeout {
       throw console.error("[idle-session-timeout] element is null or not defined");
     }
   }
+  
+  public updateTimeSpan = (timeSpan: number): void => {
+    this._timeSpan = timeSpan
+    this.reset()
+  }
 
   private _onTimeOut = (): void => {
     this.onTimeOut!();
