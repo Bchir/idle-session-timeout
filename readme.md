@@ -3,7 +3,7 @@
 Idle session timeout is a security and resource management feature that automatically logs a user out after a period of inactivity.
 
 ## Installation
-
+  
 ```
 npm i idle-session-timeout
 ```
@@ -27,16 +27,11 @@ session.onTimeLeftChange = (timeLeft) => {
     console.log(`${timeLeft} ms left`);
 };
 
-// if you are using an ifram , you should register using registerIFrame  
-// note : this method can be used called before or after start method
-const iframe = document.getElementById('idiframe') as HTMLIFrameElement;
-session.registerIFrame(iframe);
-
 session.start();
-
+ 
 // can be manually reset.
 session.reset();
-// Note:when the session is expired, it's automatically disposed.
+// Note:when the session is expired, it's automatically disposed. 
 // To reset the counter for expired session use start method.
 
 // to dispose the session
@@ -44,24 +39,23 @@ session.dispose();
 
 // returns time left before time out
 let timeLeft = session.getTimeLeft();
-
 ```
 
 By default the counter is automatically reset on those events:
 
-- page load
-- mouse move
-- mouse down
-- mouse up
-- key press
-- DOM Mouse Scroll
-- mouse wheel
-- MS Pointer Move
-- click
-- scroll
-- touch start
-- touch move
-- touch end
+* page load
+* mouse move
+* mouse down
+* mouse up
+* key press
+* DOM Mouse Scroll
+* mouse wheel
+* MS Pointer Move
+* click
+* scroll
+* touch start
+* touch move
+* touch end
 
 if for some reason you want to chose the events for the reset you can use
 
