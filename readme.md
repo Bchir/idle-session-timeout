@@ -1,7 +1,9 @@
 # idle-session-timeout
 
 Idle session timeout is a security and resource management feature that automatically logs a user out after a period of inactivity.
+[![NPM](https://nodei.co/npm/idle-session-timeout.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/idle-session-timeout/)
 
+[![NPM](https://nodei.co/npm-dl/idle-session-timeout.png)](https://nodei.co/npm/idle-session-timeout/)
 ## Installation
   
 ```
